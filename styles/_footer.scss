@@ -1,0 +1,64 @@
+footer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: $footerColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    font-size: 20px;
+    margin: 1rem 0;
+    opacity: 0.8;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1rem 0;
+    .list {
+      ul {
+        list-style: none;
+        li {
+          padding: 0.5rem 0;
+          @media screen and (max-width: 500px) {
+            font-size: 14px;
+          }
+          a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: $windowsColor;
+            &:hover {
+              color: darken($windowsColor, 9);
+            }
+            img {
+              width: 20px;
+              object-fit: contain;
+              margin: 0 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    padding: 1rem 0;
+    text-align: center;
+    line-height: 1.7rem;
+    p {
+      color: $windowsColor;
+      font-size: 14px;
+      a {
+        text-decoration: none;
+        margin: 0 5px;
+        color: $accentColor;
+        padding: 2px 3px;
+        background-color: $themeColor;
+        border: 1px solid $accentColor;
+        border-radius: 3px;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500");
+@import "./colors";
+@import "./header";
+@import "./content";
+@import "./section-features";
+@import "./section-howToPlay";
+@import "./footer";
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: $themeColor;
+  font-family: "Comfortaa", Arial, Helvetica, sans-serif;
+  color: $whiteColor;
+}

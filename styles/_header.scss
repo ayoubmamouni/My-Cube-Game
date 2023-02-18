@@ -1,0 +1,135 @@
+header {
+  background: url("../img/waves/wave.svg");
+  background-repeat: no-repeat;
+  background-size: 100%, cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    transition: 400ms;
+    @media screen and (max-width: 500px) {
+      flex-direction: column-reverse;
+      padding: 1rem !important;
+      h1 {
+        color: $waveColor !important;
+      }
+    }
+    .leftSide {
+      h1 {
+        color: $themeColor;
+        font-weight: 900;
+      }
+    }
+    .rightSide {
+      img {
+        width: 80px;
+        object-fit: contain;
+      }
+    }
+  }
+  .header-info {
+    max-width: 900px;
+    width: 90%;
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      p {
+        margin-top: 0.4rem;
+        letter-spacing: 0.6px;
+        line-height: 1.4rem;
+        &.hint {
+          padding: 0.4rem;
+          color: rgb(122, 130, 124);
+          margin-top: 1rem;
+          background: $themeColor;
+          border-radius: 5px;
+          font-size: 13px;
+          border: solid 1px $waveColor;
+          a {
+            color: rgb(0, 175, 250);
+            text-decoration: none;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+  .download-links {
+    display: flex;
+    @media screen and (max-width: 770px) {
+      display: block;
+    }
+    .links {
+      margin: 1rem;
+      .download-box {
+        padding: 0.2rem;
+        border-radius: 5px;
+        a {
+          text-decoration: none;
+          outline: none;
+          color: $waveColor;
+          background-color: $themeColor;
+          padding: 10px 15px;
+          border-radius: 5px;
+          border: 1px solid $waveColor;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 20px;
+            object-fit: contain;
+            margin-left: 10px;
+          }
+        }
+        &.android {
+          background-color: $androidColor;
+        }
+        &.windows {
+          background-color: $windowsColor;
+        }
+        &.playOnline {
+          background-color: #ff783a;
+        }
+        .counter-downloaders {
+          color: rgb(2, 12, 31);
+          padding: 0.5em 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .counter {
+            color: #24039db7;
+            font-weight: bold;
+            font-size: 13px;
+            margin: 0 5px;
+          }
+          img {
+            width: 15px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+  .browse-more {
+    text-align: center;
+    h1 {
+      margin: 1.2rem 0;
+      opacity: 0.8;
+    }
+    img {
+      width: 80px;
+      object-fit: contain;
+    }
+  }
+}

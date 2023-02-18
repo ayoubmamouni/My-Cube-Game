@@ -1,0 +1,46 @@
+section.features-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    margin: 10px 0;
+    font-size: 20px;
+    opacity: 0.8;
+  }
+  .features {
+    display: flex;
+    @media screen and (max-width: 770px) {
+      display: block;
+    }
+    .feature {
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: $windowsColor;
+      border-radius: 10px;
+      flex: 1;
+      padding: 2rem 1rem;
+      transition: 300ms;
+      opacity: 0.9;
+      img {
+        width: 150px;
+        object-fit: contain;
+      }
+      strong {
+        margin: 1rem 0;
+        color: $themeColor;
+      }
+      p {
+        line-height: 1.5rem;
+        letter-spacing: 0.5px;
+      }
+      &:hover {
+        transform: scale(1.04);
+        opacity: 1;
+      }
+    }
+  }
+}

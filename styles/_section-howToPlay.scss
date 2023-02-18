@@ -1,0 +1,45 @@
+section.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  .how-to-play {
+    border: 1px solid $accentColor;
+    max-width: 700px;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 3px;
+    margin: 1rem 0;
+    p {
+      letter-spacing: 0.5px;
+      line-height: 1.5;
+    }
+    strong {
+      display: flex;
+      align-items: center;
+      color: $accentColor;
+      span {
+        margin-left: 0.5em;
+        img {
+          width: 25px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    border: 1px solid $accentColor;
+    padding: 0.5em 1rem;
+    border-radius: 0.5em;
+    color: $accentColor;
+    display: flex;
+    align-items: center;
+    img {
+      margin-left: 0.5em;
+      width: 20px;
+      object-fit: contain;
+    }
+  }
+}
